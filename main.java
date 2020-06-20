@@ -2,6 +2,11 @@ import java.io.File;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+/*
+ * Guilherme Bittencourt Edinger
+ * Estruturas Avançadas de Dados I
+ * Trabalho GB
+ */
 
 public class main {
 
@@ -16,7 +21,7 @@ public class main {
 		Teclado leitor = new Teclado();
 		SimpleDateFormat formatoData = new SimpleDateFormat("dd/MM/yyyy");
 		boolean continuar = true;
-		System.out.println("Bem vindo ao consultor de pessoas!");
+		System.out.println("Bem vindo ao consultor de pessoas de Guilherme Bittencourt Edinger!");
 
 		do {
 			System.out.println("\nDigite o número da opção que deseja:\n" + "1 - Consultar pessoa pelo CPF;\n"
