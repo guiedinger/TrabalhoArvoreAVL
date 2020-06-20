@@ -1,3 +1,4 @@
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Pessoa {
@@ -22,7 +23,9 @@ public class Pessoa {
 
 	@Override
 	public String toString() {
-		return "Pessoa [cpf=" + cpf + ", rg=" + rg + ", nome=" + nome + ", dataDeNascimento=" + dataDeNascimento
+		SimpleDateFormat formatoData = new SimpleDateFormat("dd/MM/yyyy");
+		String dataFormatada = formatoData.format(dataDeNascimento);
+		return "Pessoa [cpf=" + cpf + ", rg=" + rg + ", nome=" + nome + ", dataDeNascimento=" + dataFormatada
 				+ ", cidade=" + cidade + "]";
 	}
 
